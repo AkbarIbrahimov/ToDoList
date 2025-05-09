@@ -45,6 +45,9 @@
             user-select: none;
             background-color: inherit;
           }
+          input[type="text"]:checked{
+            background-color: inherit;
+          }
           .searchIcon {
             display: flex;
             align-items: center;
@@ -134,6 +137,9 @@
       overflow-y: auto;
       .empty {
         display: none;
+        img{
+          user-select: none;
+        }
         h3 {
           display: flex;
           justify-content: center;
@@ -352,9 +358,6 @@
     }
     .section {
       .empty{
-        img{
-          back
-        }
         h3{
           color: white;
         }

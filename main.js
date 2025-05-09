@@ -31,6 +31,8 @@ for (let i = 0; i < option.length; i++) {
       let a = option[i].innerHTML;
       span.innerHTML = a;
     }
+    selected.classList.remove("selectedActive");
+    img.src = "image/chevron-top.png";
   });
   if (option[i].classList.contains("activeSelect")) {
     let a = option[i].innerHTML;
