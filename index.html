@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="head">
+          <p class="title">TODO LIST</p>
+          <div class="search">
+            <label for="search">
+              <input type="text" id="search" placeholder="Search note... " />
+              <i class="fa-regular fa-magnifying-glass searchIcon"></i>
+            </label>
+            <div class="selection">
+              <div class="select">
+                <span class="selectActive"></span>
+                <img src="image/chevron-top.png" alt="" class="image" />
+              </div>
+              <div class="selected">
+                <div class="option activeSelect">All</div>
+                <div class="option">Complete</div>
+                <div class="option">Incomplete</div>
+              </div>
+            </div>
+            <div class="darkmodeIcon">
+              <img class="darkmodeImage" src="svg/Vector.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="empty">
+            <img class="emptyImage" src="svg/Detective-check-footprint 1.svg" alt="">
+            <h3>Empty...</h3>
+          </div>
+        </div>
+        <div class="addIcon"><span class="Icon">+</span></div>
+      </div>
+      <div class="popup">
+        <div class="popupContainer">
+          <h1>New note</h1>
+          <input type="text" class="note" placeholder="Input your note..." />
+          <div class="btns"> 
+            <button class="cancel">Cancel</button>
+            <button class="add">Apply</button>
+          </div>
+        </div>
+      </div>
+      <div class="editPopup">
+          <div class="editContainer">
+            <h1>Edit note</h1>
+          <input type="text" class="editNote" placeholder="Edit your note..." />
+          <div class="editBtns">
+            <button class="editCancel">Cancel</button>
+            <button class="edit">Edit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
